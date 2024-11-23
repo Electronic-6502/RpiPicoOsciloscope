@@ -10,7 +10,6 @@
 		(rev "2.1.1")
 		(company "by : HS6502")
 		(comment 1 "First Version Date : 17-Oct-2024")
-		(comment 2 "axiom + epsi1on")
 	)
 	(lib_symbols
 		(symbol "+5V_1"
@@ -5478,12 +5477,6 @@
 		(uuid "80f65823-0a89-49e9-90cb-2a3c3cb19ad6")
 	)
 	(junction
-		(at 113.03 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84472d1e-8552-4333-8ef7-36617a029397")
-	)
-	(junction
 		(at 88.9 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5774,16 +5767,6 @@
 			(type default)
 		)
 		(uuid "0a53b84a-5574-46ff-9ed9-7542d0ca6bf8")
-	)
-	(wire
-		(pts
-			(xy 125.73 105.41) (xy 113.03 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a759f00-09dc-4ddc-b90f-3c8dd4c77006")
 	)
 	(wire
 		(pts
@@ -14610,6 +14593,72 @@
 			(project "RP-Pico-Scope"
 				(path "/8d25a4ce-055a-4492-9644-c1eda4dd0215"
 					(reference "REL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-5VA")
+		(at 125.73 105.41 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb0f5092-13f3-46ca-9bfc-49724f45ad0b")
+		(property "Reference" "#PWR035"
+			(at 125.73 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5VA"
+			(at 125.73 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5VA\""
+			(at 125.73 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff4f77f6-4db5-4ca7-97e3-6a1b8e2586d9")
+		)
+		(instances
+			(project "RP-Pico-Scope"
+				(path "/8d25a4ce-055a-4492-9644-c1eda4dd0215"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
